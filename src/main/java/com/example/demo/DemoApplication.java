@@ -22,6 +22,7 @@ public class DemoApplication {
     public String test(){
 
         log.info(conf.getName());
+        log.info(conf.getName());
 
         return "hello world";
     }
