@@ -29,3 +29,17 @@ build/
 
 ### VS Code ###
 .vscode/
+eureka-server/.mvn/wrapper/maven-wrapper.jar
+eureka-server/.mvn/wrapper/maven-wrapper.properties
+eureka-server/.mvn/wrapper/MavenWrapperDownloader.java
+eureka-server/mvnw
+eureka-server/mvnw.cmd
+test/.mvn/wrapper/maven-wrapper.jar
+test/.mvn/wrapper/maven-wrapper.properties
+test/.mvn/wrapper/MavenWrapperDownloader.java
+test/mvnw
+test/mvnw.cmd
+eureka-server/.mvn/wrapper/maven-wrapper.jar
+test/.mvn/wrapper/maven-wrapper.jar
+eureka-server/.mvn/wrapper/maven-wrapper.jar
+test/.mvn/wrapper/maven-wrapper.jar
