@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import com.example.demo.Conf.Conf;
+import com.example.demo.Filter.InportAutoConfiguration.annotations.EnableLogFilter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 @Slf4j
+@EnableLogFilter
 public class DemoApplication {
     @Autowired
     private Conf conf;
