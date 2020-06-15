@@ -43,3 +43,9 @@ eureka-server/.mvn/wrapper/maven-wrapper.jar
 test/.mvn/wrapper/maven-wrapper.jar
 eureka-server/.mvn/wrapper/maven-wrapper.jar
 test/.mvn/wrapper/maven-wrapper.jar
+logFilter/mvnw.cmd
+logFilter/mvnw
+logFilter/.mvn/wrapper/MavenWrapperDownloader.java
+logFilter/.mvn/wrapper/maven-wrapper.properties
+logFilter/.mvn/wrapper/maven-wrapper.jar
+eureka-server/.mvn/wrapper/maven-wrapper.jar
