@@ -12,7 +12,7 @@ public class LogFilterRegistrationBean extends FilterRegistrationBean<LogFilter>
         super();
 
         this.setFilter(new LogFilter());
-        this.addUrlPatterns("/");
+        this.addUrlPatterns("/*");
         this.setName("LogFilter");
         this.setOrder(1);
 

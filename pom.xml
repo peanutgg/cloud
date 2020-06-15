@@ -20,7 +20,7 @@
     </properties>
     <modules>
         <module>eureka-server</module>
-        <module>test</module>
+        <module>logFilter</module>
     </modules>
     <dependencies>
         <dependency>
