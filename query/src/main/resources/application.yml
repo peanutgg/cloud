@@ -3,7 +3,7 @@ spring:
     name: query-client-service
 eureka:
   instance:
-    hostname: client
+    hostname: localhost
     instance-id: ${spring.application.name}:${vcap.spring.application_id}:${spring.application.instance_id:${random.value}}
 
   client:
