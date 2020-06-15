@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: query-client-service
+eureka:
+  instance:
+    hostname: client
+    instance-id: ${spirng.application.name}:${vcap.springapplication_id}:${spring.application.instance_id:${random.value}}
+
+  client:
+    service-url:
+      defaultZone: http://localhost:9091/eureka/
+server:
+  port: 9092
