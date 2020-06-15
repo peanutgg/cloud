@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: demo-consul
+  cloud:
+    consul:
+      discovery:
+        instance-id: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id}:${random.value}}}
+        service-name: demo-consul
+      host: localhost
+      port: 8500
