@@ -1,10 +1,10 @@
-package com.example.test;
+package com.example.feign;
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-public class TestApplicationTests {
+public class FeignApplicationTests {
 
     @Test
     public void contextLoads() {

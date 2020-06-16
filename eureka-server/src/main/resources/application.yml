@@ -1,3 +1,56 @@
+spring:
+  application:
+    name: eureka-service
+  profiles:
+    active: standalone
+---
+spring:
+  profiles: peer1
+  application:
+    name: eureka-server-peer
+server:
+  port: 9081
+eureka:
+  instance:
+    hostname: localhost
+    ##instance-id: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id}:${random.value}}}
+    instance-id: eureka-${server.port}
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:9082/eureka/
+---
+spring:
+  profiles: peer2
+  application:
+    name: eureka-server-peer
+server:
+  port: 9082
+eureka:
+  instance:
+    hostname: localhost
+    instance-id: eureka-${server.port}
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:9081/eureka/
+---
+spring:
+  profiles: peer3
+  application:
+    name: eureka-server-peer
+server:
+  port: 9083
+eureka:
+  instance:
+    hostname: localhost
+    instance-id: eureka-${server.port}
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:9081/eureka/
+---
+spring:
+  profiles: standalone
+  application:
+    name: eureka-server-standalone
 server:
   port: 9091
 eureka:
@@ -11,6 +64,5 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   server:
     enable-self-preservation: false
-spring:
-  application:
-    name: eureka-service
+
+
