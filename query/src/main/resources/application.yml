@@ -4,7 +4,7 @@ spring:
 eureka:
   instance:
     hostname: localhost
-    instance-id: ${spring.application.name}:${vcap.spring.application_id}:${spring.application.instance_id:${random.value}}
+    instance-id: ${spring.application.name}:${server.port}
 
   client:
     service-url:
