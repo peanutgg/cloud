@@ -3,11 +3,19 @@ spring:
     name: demo-consul
   cloud:
     consul:
-      discovery:
-        instance-id: consul01
-        service-name: demo-consul
       host: localhost
       port: 8500
-
+      discovery:
+        instance-id: ${spring.application.name}:${random.value}
+        service-name: demo-consul
+        enabled: true
+        register: true
+        query-passing: true
+      config:
+        format: key_value
+        enabled: true
+        default-context: application
+        data-key: data
+        prefix: config
 server:
   port: 9094
