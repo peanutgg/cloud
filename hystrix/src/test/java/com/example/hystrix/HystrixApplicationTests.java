@@ -1,14 +1,13 @@
-package com.example.eurekaserver;
+package com.example.hystrix;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-public class EurekaServerApplicationTests {
+class HystrixApplicationTests {
 
     @Test
-    public void contextLoads() {
-
+    void contextLoads() {
     }
 
 }

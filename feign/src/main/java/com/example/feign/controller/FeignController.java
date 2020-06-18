@@ -1,5 +1,6 @@
 package com.example.feign.controller;
 
+import com.example.feign.Pojo.Instance;
 import com.example.feign.feignClents.FeignServiceClient;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,5 +19,12 @@ public class FeignController {
         feignServiceClient.hello(name);
         return "test Feing ------is ok";
     }
+
+    @RequestMapping("/instance/{serviceId}")
+    public Instance getInstanceByServiceId(@PathVariable String serviceId){
+        log.info("get in");
+        return new Instance();
+    }
+
 
 }
