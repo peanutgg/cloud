@@ -11,3 +11,7 @@ eureka:
       defaultZone: http://localhost:9091/eureka/,http://localhost:9081/eureka/
 server:
   port: 9095
+
+feign:
+  hystrix:
+    enabled: true

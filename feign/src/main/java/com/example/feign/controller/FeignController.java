@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class FeignController {
     @Autowired
     FeignServiceClient feignServiceClient;
+
+
     @RequestMapping("/testFeign/{name}")
     public String testFeign(@PathVariable String name) {
         log.info("test Feing ------namme is ==" + name);
@@ -20,10 +22,12 @@ public class FeignController {
         return "test Feing ------is ok";
     }
 
-    @RequestMapping("/instance/{serviceId}")
-    public Instance getInstanceByServiceId(@PathVariable String serviceId){
-        log.info("get in");
-        return new Instance();
+
+
+    @RequestMapping("/testOpenFeignHystrix/{str}")
+    public String  testOpenFeignHystrix(@PathVariable String str){
+        log.info("testOpenFeignHystrix  is success");
+        return "success"+str;
     }
 
 
