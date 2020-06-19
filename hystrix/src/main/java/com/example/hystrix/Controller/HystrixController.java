@@ -27,7 +27,6 @@ public class HystrixController {
         return instanceService.getInstanceByServiceIdWithRestTemplate(serviceId);
 
     }
-
     @RequestMapping("/instance/{serviceId}")
     public Instance getInstance2(@PathVariable String serviceId) {
         return instance;
