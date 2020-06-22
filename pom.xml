@@ -28,6 +28,7 @@
         <module>consul</module>
         <module>feign</module>
         <module>hystrix</module>
+        <module>ribbon</module>
     </modules>
 
     <dependencies>
@@ -79,6 +80,11 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.3.7</version>
         </dependency>
     </dependencies>
 
