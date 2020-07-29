@@ -9,9 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class HelloController {
     @RequestMapping("/hello/{name}")
-    public String hello(@PathVariable("name") String name){
-        log.info("name is ------------"+name);
-        return "hello service"+name;
+    public String hello(@PathVariable("name") String name) {
+
+        log.info("name is ------------" + name);
+        return "hello service" + name;
     }
 
 

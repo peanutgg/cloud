@@ -15,7 +15,7 @@ public class Instance {
     @Value("${server.port}")
     private String port;
 
-    public Instance(String serviceId,String host,String port ) {
+    public Instance(String serviceId, String host, String port) {
 
         this.serviceId = serviceId;
         this.host = host;
@@ -23,5 +23,6 @@ public class Instance {
     }
 
     public Instance() {
+
     }
 }

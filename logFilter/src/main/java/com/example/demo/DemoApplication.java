@@ -16,12 +16,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoApplication {
     @Autowired
     private Conf conf;
+
     public static void main(String[] args) {
+
         SpringApplication.run(DemoApplication.class, args);
     }
 
     @GetMapping("/test")
-    public String test(){
+    public String test() {
 
         log.info(conf.getName());
         log.info(conf.getName());

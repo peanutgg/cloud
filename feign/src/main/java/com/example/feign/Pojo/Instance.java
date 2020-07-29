@@ -16,9 +16,10 @@ public class Instance {
     private String port;
 
     public Instance() {
+
     }
 
-    public Instance(String serviceId, String host, String port ) {
+    public Instance(String serviceId, String host, String port) {
 
         this.serviceId = serviceId;
         this.host = host;

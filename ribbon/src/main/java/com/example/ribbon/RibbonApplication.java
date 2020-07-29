@@ -19,7 +19,7 @@ import org.springframework.web.client.RestTemplate;
 public class RibbonApplication {
     @Bean
     @LoadBalanced
-    RestTemplate restTemplate(){
+    RestTemplate restTemplate() {
 
         return new RestTemplate();
     }

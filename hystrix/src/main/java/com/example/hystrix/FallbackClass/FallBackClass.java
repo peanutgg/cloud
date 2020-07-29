@@ -11,6 +11,7 @@ public class FallBackClass implements HystrixFeignClents {
 
     @Override
     public String testOpenFeignHystrix(String str) {
+
         log.info("hystrix 以openfeign形式执行失败的回调方法被执行---");
         return "failed";
     }

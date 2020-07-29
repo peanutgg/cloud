@@ -18,26 +18,29 @@ public class FeignController {
 
     /**
      * 测试feignclient  调用hello service
+     *
      * @param name
      * @return
      */
     @RequestMapping("/testFeign/{name}")
     public String testFeign(@PathVariable String name) {
+
         log.info("test Feing ------namme is ==" + name);
         feignServiceClient.hello(name);
         return "test Feing ------is ok";
     }
 
 
-
     @RequestMapping("/testOpenFeignHystrix/{str}")
-    public String  testOpenFeignHystrix(@PathVariable String str){
+    public String testOpenFeignHystrix(@PathVariable String str) {
+
         log.info("testOpenFeignHystrix  is success");
-        return "success"+str;
+        return "success" + str;
     }
 
     @RequestMapping("/getInstance/{serviceId}")
-    public Instance  getInstance(@PathVariable String serviceId){
+    public Instance getInstance(@PathVariable String serviceId) {
+
         log.info("getInstance  in ");
         return new Instance();
     }

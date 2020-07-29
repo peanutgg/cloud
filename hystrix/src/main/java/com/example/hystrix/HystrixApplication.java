@@ -17,11 +17,14 @@ import org.springframework.web.client.RestTemplate;
 public class HystrixApplication {
 
     public static void main(String[] args) {
+
         SpringApplication.run(HystrixApplication.class, args);
     }
+
     @Bean
     @LoadBalanced
-    public RestTemplate getRestTemplate(){
+    public RestTemplate getRestTemplate() {
+
         return new RestTemplate();
     }
 

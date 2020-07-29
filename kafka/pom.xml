@@ -8,15 +8,21 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>hystrix</artifactId>
+    <artifactId>kafka</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>hystrix</name>
-    <description>Demo project for Spring Boot</description>
+    <name>kafka</name>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-stream</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka_2.13</artifactId>
+            <version>2.4.0</version>
+        </dependency>
     </dependencies>
-
-
     <build>
         <plugins>
             <plugin>

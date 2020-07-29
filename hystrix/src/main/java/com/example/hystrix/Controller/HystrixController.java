@@ -27,13 +27,15 @@ public class HystrixController {
         return instanceService.getInstanceByServiceIdWithRestTemplate(serviceId);
 
     }
+
     @RequestMapping("/instance/{serviceId}")
     public Instance getInstance2(@PathVariable String serviceId) {
+
         return instance;
     }
 
     @RequestMapping("/testOpenFeignHystrix/{str}")
-    public String  testOpenFeignHystrix(@PathVariable String str){
+    public String testOpenFeignHystrix(@PathVariable String str) {
 
         hystrixFeignClents.testOpenFeignHystrix("123333");
         return "success";

@@ -14,10 +14,10 @@ import org.springframework.util.Assert;
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 
-/**.
+/**
+ * .
  * 如果需要在所有的@Configuration处理完再导入时可以实现DeferredImportSelector接口
  * BeanClassLoaderAware接口和BeanFactoryAware接口同理，可以分别获取Bean的类装载器和bean工厂
- *
  */
 @Slf4j
 public class EnableLogFilterImportSelector implements DeferredImportSelector, BeanClassLoaderAware, EnvironmentAware {
@@ -37,7 +37,7 @@ public class EnableLogFilterImportSelector implements DeferredImportSelector, Be
     public String[] selectImports(AnnotationMetadata metadata) {
         //获取注解中的属性
         AnnotationAttributes annotationAttributes = AnnotationAttributes.fromMap(metadata.getAnnotationAttributes(this.annotationClass.getName()));
-        Assert.notNull(annotationAttributes,"annotationAttributes can not be null...");
+        Assert.notNull(annotationAttributes, "annotationAttributes can not be null...");
         ArrayList<String> factories = new ArrayList<>(new LinkedHashSet<>(SpringFactoriesLoader.loadFactoryNames(this.annotationClass, this.getClass().getClassLoader())));
 
         return factories.toArray(new String[factories.size()]);

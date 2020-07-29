@@ -9,6 +9,7 @@ public class LogFilterRegistrationBean extends FilterRegistrationBean<LogFilter>
 
 
     public LogFilterRegistrationBean() {
+
         super();
 
         this.setFilter(new LogFilter());
