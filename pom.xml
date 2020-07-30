@@ -31,6 +31,8 @@
         <module>ribbon</module>
         <module>kafka-consumer</module>
         <module>kafka-producer</module>
+        <module>kafka-stream</module>
+        <module>kafka-connector</module>
     </modules>
 
     <dependencies>
