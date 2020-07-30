@@ -25,11 +25,12 @@
         <module>logFilter</module>
         <module>hello</module>
         <module>query</module>
-        <module>consul</module>
+<!--        <module>consul</module>-->
         <module>feign</module>
         <module>hystrix</module>
         <module>ribbon</module>
-        <module>kafka</module>
+        <module>kafka-consumer</module>
+        <module>kafka-producer</module>
     </modules>
 
     <dependencies>
