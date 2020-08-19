@@ -4,6 +4,7 @@ import com.example.demo.stack.interf.Stack;
 
 import java.util.Arrays;
 import java.util.ConcurrentModificationException;
+import java.util.LinkedList;
 
 public class MyStack<T> implements Stack<T> {
 
@@ -58,4 +59,7 @@ public class MyStack<T> implements Stack<T> {
         }
     }
 
+    public static void main(String[] args) {
+
+    }
 }
