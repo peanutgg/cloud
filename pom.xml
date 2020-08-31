@@ -33,6 +33,7 @@
         <module>kafka-producer</module>
         <module>kafka-stream</module>
         <module>kafka-connector</module>
+        <module>kafka-elk</module>
     </modules>
 
     <dependencies>
