@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LeetCodeTest {
-
+    static ListNode frontPointer;
     public static class ListNode {
         int val;
         ListNode next;
@@ -36,6 +36,27 @@ public class LeetCodeTest {
     public static void main(String[] args) {
 //        ListNode listNode = new ListNode(1);
 //        listNode.next = new ListNode(2);
-        isPalindrome(null);
+//        isPalindrome(null);
+    }
+
+
+    public static boolean isPalindrome2(ListNode head) {
+        frontPointer = head;
+        isPalindrome2(head);
+        return true;
+    }
+
+    public boolean recursivelyCheck(ListNode currentNode){
+        if (currentNode != null) {
+            if (!recursivelyCheck(currentNode.next)) {
+                return false;
+            }
+            if (currentNode.val != frontPointer.val) {
+                return false;
+            }
+            frontPointer = frontPointer.next;
+        }
+        return true;
+
     }
 }
