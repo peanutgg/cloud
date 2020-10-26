@@ -1,7 +1,6 @@
-
 spring:
   application:
-    name: kafka-stream
+    name: hello-client-service
 eureka:
   instance:
     hostname: localhost
@@ -11,4 +10,4 @@ eureka:
     service-url:
       defaultZone: http://localhost:9091/eureka/,http://localhost:9081/eureka/
 server:
-  port: 9090
+  port: 9093
