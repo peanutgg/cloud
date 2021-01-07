@@ -34,6 +34,7 @@
         <module>kafka-stream</module>
         <module>kafka-connector</module>
         <module>performanceOpt</module>
+        <module>user-service</module>
     </modules>
 
     <dependencies>
@@ -91,6 +92,8 @@
             <artifactId>hutool-all</artifactId>
             <version>5.3.7</version>
         </dependency>
+
+
     </dependencies>
 
     <dependencyManagement>

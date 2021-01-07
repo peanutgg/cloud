@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: userservice
+eureka:
+  instance:
+    hostname: localhost
+    ##instance-id: ${spring.application.name}:${vcap.spring.application_id}:${spring.application.instance_id:${random.value}}
+    instance-id: ${spring.application.name}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://localhost:9091/eureka/,http://localhost:9081/eureka/
+server:
+  port: 8081
