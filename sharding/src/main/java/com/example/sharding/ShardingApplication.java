@@ -16,7 +16,7 @@ import org.springframework.web.client.RestTemplate;
 @EnableDiscoveryClient
 @RibbonClient(name = "ribbon-test", configuration = RibbonAutoConfiguration.class)
 
-public class RibbonApplication {
+public class ShardingApplication {
     @Bean
     @LoadBalanced
     RestTemplate restTemplate() {
@@ -29,7 +29,7 @@ public class RibbonApplication {
 
     public static void main(String[] args) {
 
-        SpringApplication.run(RibbonApplication.class, args);
+        SpringApplication.run(ShardingApplication.class, args);
     }
 
 
