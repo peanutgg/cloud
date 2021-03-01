@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @Slf4j
-public class ConfigController {
+public class HelloController {
     @RequestMapping("/hello/{name}")
     public String hello(@PathVariable("name") String name) {
 
